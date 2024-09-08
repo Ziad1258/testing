@@ -5,7 +5,7 @@ const logInForm = document.getElementById("loginForm");
 const navLink = document.getElementById("navLink");
 const holder = document.querySelector(".holder");
 const loader = document.querySelector(".loader");
-
+const uid = 1231;
 
 // handle Login Function
 const logInFunc = async (e) => {
@@ -16,7 +16,7 @@ const logInFunc = async (e) => {
   const passwordValue = passwordElement.value;
   
   // API endpoint
-  const apiUrl = "https://one-hand/login?uid=1231";
+  const apiUrl = `https://one-hand/login?uid=${uid}` ;
   
   // Parameters to be sent in the request body
   const params = {
