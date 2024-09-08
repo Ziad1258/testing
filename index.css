@@ -55,6 +55,12 @@
     }
    
 }
+@media (max-width: 541px) {
+    .navLink span{
+        display: none;
+    }
+   
+}
 .holder {
     display: flex;
 }
@@ -65,14 +71,18 @@
 }
 #loginForm {
     width: 350px;
-    max-width: 350px;
-    /* height: 400px; */
     background: var(--black-color);
     border-radius: 10px;
     padding: 10px 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+@media (max-width: 541px) {
+     #loginForm {
+        width: 100%;
+        margin: 0 20px;
+    }
 }
 
 #loginForm .logoImage {
